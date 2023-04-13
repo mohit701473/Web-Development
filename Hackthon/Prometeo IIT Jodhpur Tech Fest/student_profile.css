@@ -1,0 +1,75 @@
+      body{
+        margin: 0;
+      }
+
+      /* student-container */
+      .student-container{
+        margin: 5%;
+      }
+      
+      /* profile-container */
+      .profile {
+        display: inline;
+        align-items: center;
+      }
+      
+      .profile-info {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+      }
+      
+      .profile-info img {
+        width: 13%;
+        border-radius: 50%;
+        margin-bottom: 0.5rem; 
+      }
+      
+      .profile-name {
+        font-size: 2rem;
+      }
+
+      /* middle-container */
+    .middle-container{
+        text-align: center;
+    }
+
+    .btn{
+    color: #333;
+    display: inline;
+    width: 12%;
+    margin: 10px;
+    height: 10%;
+    background-color: #ffc107;
+    border: none;
+    height: 40px;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+
+    /* Transistion Table */  
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    th, td {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    th {
+      padding-top: 12px;
+    }
+  }
+

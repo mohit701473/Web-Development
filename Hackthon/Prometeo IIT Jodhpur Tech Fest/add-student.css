@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+.student-details{
+    text-align: center;
+}
+
+.input{
+    width: 50%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    height: 2rem;
+}
+

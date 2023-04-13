@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+
+        .container-top{
+            background-color: black;
+            width: 1000px;
+            height: 500px;
+            box-sizing: border-box;
+            padding:100px;
+        }
+        .container{
+            border: 2px solid red;
+            background-color: antiquewhite;
+            padding: 34px;
+            margin: auto;
+            width: 666px;
+        }
+
+        a{
+            text-decoration: none;/*by this under line is removed*/
+            color: black;
+        }
+        a:hover{
+            color: rgb(182, 120, 120);/* is ka mtlb h ki jb cursor ko read more button pr le jate h to uska color black ho jayega */
+            background-color: gray;
+        }
+        a:visited{
+            /* is ka mtlb h ki jb link visited hoga to read more ka background-color yellow hoga agr link exist nhi karega to yellow color nhi dikhega */
+            background-color: yellow;
+        }
+        a:active{
+            /* is ka mtlb h ki read more pr click krte time uska background-color darkblue ho jaye ga */
+            background-color: darkblue;
+        }
+            
+
+        .btn{
+            background-color: crimson;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: rgb(182, 120, 120);
+            background-color: bisque;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-top">
+        <div id="cont1" class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores maxime ullam eaque sed veniam, numquam tempora optio assumenda delectus et. Dolor rem ipsum incidunt cupiditate quod, autem delectus enim?</p>
+        
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+    </div>
+    
+</body>
+</html>

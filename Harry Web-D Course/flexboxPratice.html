@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 300px;
+            border: 2px solid red;
+            display: flex;
+        }
+        .item{
+            background-color: blue;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 2px;
+            width: 100px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox</h1>
+    <!-- div.item#item-$*6 it gives us 6 dive with class="item" and id="item-1,2" so on so $*6 give us incremently value 1 to 6 -->
+    <div class="container"> 
+        <div class="item" id="item-1">Fisrt box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Forth box</div>
+        <div class="item" id="item-5">Fiveth box</div>
+        <div class="item" id="item-6">Sixth box</div>
+    </div>
+</body>
+</html>

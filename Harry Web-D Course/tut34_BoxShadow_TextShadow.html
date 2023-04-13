@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: burlywood;
+
+            /* background-color and box ka color same ho jata h to differ ke liye box-shadow use kr skte h */
+            
+            /* box-shadow: offset-x offset-y blurre radius spread radius color; */
+            box-shadow: 4px 4px green;
+            box-shadow: -5px -3px green;
+            box-shadow: 5px 5px 3px green;
+            box-shadow: 5px 5px 3px 3px green;
+
+            /* color: rgba(red, green, blue, alpha) alpha bata h ki color ko kitna dark rakhna h; */
+            box-shadow: 5px 5px 3px 3px rgba(40, 206, 206, 0.8);
+
+            /* box ke inside shadow ke liye inset use krte h  */
+            box-shadow: inset 3px 5px green;
+
+            /* here we do multiple shadows  */
+            box-shadow: 3px 7px green ,  10px 5px red;
+        }
+
+        .card h2{
+            /* jub image m text nhi dikh rha hota h to text shadow use kr skte h */
+            text-shadow: 3px 4px white;
+            text-shadow: 3px 4px 2px whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum sint enim pariatur iusto quae incidunt consectetur repellendus laboriosam! Fugit porro error possimus accusamus, iste odio deleniti. Hic dicta praesentium sit, exercitationem alias voluptate.</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempore vero facere laborum quaerat optio veniam aspernatur mollitia, ratione sit voluptates. Dolorem officia alias quam fuga minima, soluta quod eos officiis eius iusto deserunt!</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit repellat odit blanditiis voluptatem quae corporis cupiditate, eligendi quis ab ad eaque vero non assumenda perspiciatis obcaecati fugiat ipsa incidunt, consequuntur pariatur, perferendis impedit voluptates.</p>
+        </div>
+    </div>
+</body>
+</html>

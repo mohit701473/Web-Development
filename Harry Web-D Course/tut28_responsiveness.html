@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Websites</title>
+</head>
+<style>
+    html{
+        font-size: 20px;
+    }
+    .container{
+        width: 400px;
+        width: 100vw;
+        /* es vw unit se width automaticly browse ke hisab se set ho jati h i.e. it like a %  */
+
+        height: 300px;
+        height: 100vh;
+
+        font-size: 10px;
+        border: 2px solid red;
+    }
+    h1{
+        text-align: center;
+    }
+    #first{
+        /* em ka use hum tb karenge jum hum chahte hai ki jum hum parent ko resize kre to child bhi resize ho jaye  */
+
+        /* font-size: 5em; */
+        /* es property se #first id vali heading ka font size apne parent i.e.container ka 5 guna ho jaye ga */
+
+        /* padding: 3em; */
+        /* jub bhi humne font size set kr diya hota h to ye padding vala 3em font size ko lega i.e humari padding 3em ka mtlb 50*3=150px hogi i.e 3 guna of font-size not parent*/
+    }
+    #second{
+        /* font-size: 3rem; */
+        /* rem dene se size html ke hisab se set ho jati h */
+
+        /* padding: 3rem; */
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 id="first">This is first headind</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="thrid">This is third heading</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transistions</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+
+            /* kevel vhi property transistion ho skti h jinki continus value hoti h like color height width etc */
+            
+            transition-property: background-color; /* konsi property ka hum transistion krna chahte h*/
+
+            transition-duration: 2s; /* Transistion hone m kitna time lega */
+
+            transition-timing-function: ease-in; /* start slow then fast */
+
+            /* transition-delay: 2s; */
+
+            /* transition: property transistion-duration transistion-timing-function transistion-delay; */
+            transition: all 1s ease-in-out ;
+        }
+
+        #box:hover{
+            background-color: goldenrod;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is CSS Transistions Tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

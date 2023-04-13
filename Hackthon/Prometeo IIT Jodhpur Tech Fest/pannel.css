@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+}
+
+/* Nav Bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+
+/* right side button */  
+
+.container{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 6%;
+}
+
+  .admin-btn{
+    position: relative;
+  }
+
+  .btn-container{
+    position: absolute;
+    right: 0;
+  }
+  
+  
+  .add-merchant-btn {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .transition-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+  }
+
+  .middle-container{
+    margin-top: 8%;
+  }
+  
+  /* Batch Button*/
+
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2% 4% 2%;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin: 0 1%;
+  }
+  
+  .button-1 {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .button-2 {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .button-3 {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .button-4 {
+    background-color: rgb(177, 174, 174);
+  } 
+  
+  .button-5 {
+    background-color: rgb(131, 68, 68);
+  } 
+
+
+.table-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+/* Table */  
+  
+table {
+    border-collapse: collapse;
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    th, td {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    th {
+      padding-top: 12px;
+    }
+  }
+
+  .send-token-btn{
+    color: #333;
+    display: inline;
+    width: 30%;
+    background-color: #ffc107;
+    border: none;
+    height: 40px;
+    font-size: 1rem;
+
+  }
+
+/* Add Student Btn*/
+.center-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .add-student-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+
+ /* footer part */
+
+
+
+.nav-footer{
+    display: block;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h6 {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 4%;
+    margin-left: 4%;
+    display: inline;
+}
+
+.footer-content{
+    font-size: 1rem;
+}
+
+.copyright-content{
+    margin-left: 20px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* display: flex; krne se container flexbox ban gaya and container ke ander ke item flex item ban gye h and es property se sare div line ki tarah khade ho jayenge  */
+
+            /* flex properties for flex container */
+            flex-direction: row;
+            /* flex-direction: row; yah by deafult hoti h and is m sare div jo container ke andr h column vise set ho te h */
+
+            flex-direction: column;
+            /* flex-direction: column; yah by deafult hoti h and is m sare div jo container ke andr h row vise set ho te h */
+
+            flex-direction: row-reverse;
+            /* flex-direction: row-reverse; is property m flex box left ya reverse se fill hona statrt hoga */
+
+            flex-direction: column-reverse;
+            /* flex-direction: column-reverse; is property m flex box niche se fill hona statrt hoga */
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap; is property se box apne aap ko size ke acc adjust kr lete h upper niche */
+
+            flex-flow: row-reverse wrap;
+            /* flex-flow: row-reverse wrap; is property se hum flex-direction: ; and flex-wrap: ; dono property ek sath use kr sakte h  */
+
+            justify-content: center;
+            /* justify-content: center; is property se cheje ceneter ho jati h and size change krne se jese phone ya other device m open krne se bhi ye center m rahati h  */
+
+            justify-content: space-between;
+            /* is se boxes ke bich m sapce same ho jaye ga but starting and end m space nhi rahega */
+
+            justify-content: space-evenly;
+            /* is se boxes and start and end m sb jagh space same ho ajye ga */
+
+            justify-content: space-around;
+            /* is ka mtlb h ki kisi bhi ek box ke dono side barabr space kr do */
+
+            align-items: center;
+            /* is se cheeje verticely center ho jaye gi i.e. box ke upper and niche space same ho jaye ga  */
+
+            align-items: flex-end;
+            /* boxes niche aajyenge */
+
+            align-items: flex-start;
+            /* yah by default hoti h and boxes uper che jayenge */
+
+            align-items: stretch;
+            /* es se verticaly evenly space bana lenge boxes */
+        }
+
+        #item-1{
+            /* flex property for a flex item */
+            /* order: 2; */
+            /* es property se box last m chala jata h and jiska order jayda hota h vahi last m jata h */
+
+            /* flex-grow: 8; */
+            /* negative numbers are invalied in this property */
+            /* es property se box jyad bda dikhta h and teji se bdta bhi h jub flex container bda y achota hota h to */
+            flex-basis: 320px;
+            /* es property se hum es box ke size ko control kr skte h */
+            /* and when flex-direction set to row then flex-basis: will control width and when flex-direction: set to column it will control the height */
+        }
+        #item-2{
+            /* order: 1;
+            flex-grow: 10; */
+
+            flex-shrink: 3;
+            /* is se box chota hota h  */
+        }
+        #item-3{
+            /* order: 40; */
+            align-self: flex-end;
+            /* es se yah flex ke end m chala jayega and flex-start se start m chalal jaye ga */
+
+            align-self: center;
+            /* es se center m chala jaye ga */
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Flexbox is a one dimensional layout method for laying out items in rows or column -->
+    <!-- CSS Flexbox is a better way ton align items into a container
+    Flexbox = flexible + box -->
+    <h1>This is Flexbox</h1>
+    <!-- div.item#item-$*6 it gives us 6 dive with class="item" and id="item-1,2" so on so $*6 give us incremently value 1 to 6 -->
+    <div class="container"> 
+        <div class="item" id="item-1">Fisrt box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <!-- <div class="item" id="item-4">Forth box</div>
+        <div class="item" id="item-5">Fiveth box</div>
+        <div class="item" id="item-6">Sixth box</div> -->
+    </div>
+    
+</body>
+</html>

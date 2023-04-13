@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <!-- Here we use internal CSS -->
+    <style>
+
+        /* The following style is a CSS Element Selector bcz we select entire element like all paragraph are selected */
+        p{
+            color : red ;
+            background-color: antiquewhite;
+            border: 2px solid red ;
+            
+        }
+
+        
+        #secondPara{
+            color : blue ;
+            background-color: antiquewhite;
+        } /*this is a CSS id Selector here we select the id insted of all paragraphs.
+        By the use of id Selector we can style a specific paragraph bcz  there is not peresent two same ids in HTML file  */   
+
+
+        .redelement{
+            color : brown ;
+            background-color: antiquewhite;
+        } /*this is a CSS Class selector here we select the class insted of all paragraphs.
+        By the use of class Selector we can style multiple things with same values  and  Class is not unique in HTML file i.e two same calss is given to two dinnerent paragraph or other  */ 
+
+
+        footer,span{
+            color: blue;
+            background-color: greenyellow;
+        }/* This is a CSS grouping selector  */
+        
+
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+
+    <p>Here we learn about different types of CSS Selectors</p>
+
+    <p id="secondPara" class="redelement">Here we learn about different types of CSS Selectors</p>
+
+    <div>
+        <p>Here we learn about different types of CSS Selectors</p>
+        <span>This is a sapn</span>
+    </div>
+
+    <footer>This is a footer</footer>
+
+</body>
+</html>

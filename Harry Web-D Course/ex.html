@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		.top {
+			height: 200px;
+			width: 200px;
+			background-color: red;
+			display: inline-block;
+		}
+
+		.middle {
+			height: 200px;
+			background-color: green;
+			display: inline-block;
+			width: 200px;
+		}
+
+        .inside-middle{
+            background-color: bisque;
+            height: 100px;
+			width: 100px;
+			/* display: inline-block; */
+        }
+
+		.bottom {
+			height: 200px;
+			width: 200px;
+			display: inline-block;
+			background-color: blue;
+		}
+	</style>
+
+</head>
+<body>
+    <div class="top">top</div>
+    <div class="middle">middle
+        <div class="inside-middle">inside middle</div>
+    </div>
+    <div class="bottom">bottom</div>
+</body>
+</html>

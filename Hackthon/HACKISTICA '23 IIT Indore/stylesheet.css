@@ -1,0 +1,116 @@
+.navbar{
+    background-color: black !important;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    margin: 0px 40px 0 170px;
+    font-weight: 800;
+}
+.containre-navbar{
+    color: white;
+}
+
+.search-product{
+    width: 550px;
+    border-radius: 0;
+    border: 3px solid #0d6efd;
+    border-radius: 30px ;
+}
+
+.wallet-btn{
+    border-radius: 0;
+    margin-left: 40px;
+    color: #2874f0;
+    font-weight: 700;
+}
+
+.nav-item{
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.cart{
+    margin: 0 20px;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+}
+
+.wallet-btn{
+    background-color: #0d6efd !important;
+    color: white !important;
+    border-radius: 2px;
+    border: 5px solid #2962b8;
+
+}
+
+/* Product Section*/
+
+.auto-slider-img{
+    width: 100%;
+    height: 500px;
+}
+
+.icon-prev{
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+.icon-next{
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next, .carousel-control-prev{
+    background-color: white;
+    height: 50px;
+    top: 50%;
+}
+
+.product-btn{
+    background-color: #0d6efd;
+    
+}
+
+.card-body{
+    text-align: center;
+}
+
+/* Footer */
+.text-white{
+    text-decoration: none;
+}
+
+.footer-part{
+    background-color: black;
+}
+
+.copyright-content{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.text-color{
+    /* color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); */
+    color: white !important;
+}
+
+
+
+.brand-name{
+    font-size: 5rem;
+    font-weight: 800;
+    float: left;
+    margin-right: 0px;
+    position: relative;
+    right: 170px;
+    color: #0d6efd;
+}
+
+.description{
+    text-align: left;
+    position: relative;
+}
+
+/*body*/
+body{
+    background-color: black !important;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z index & Stacking Order</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;         
+            position: absolute;
+            /* position: relative; */
+        }
+        .red{          
+            background-color: red; 
+            z-index: 8;         
+        }
+        .yellow{
+            background-color: yellow; 
+            left: 20px; 
+            top: 20px;
+            z-index: 10;
+        }
+        .blue{
+            background-color: blue;
+            left: 40px;
+            top: 40px;
+            z-index: 54;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        red
+        <!-- <div class="yellow">
+            yellow
+        </div> -->
+    </div>
+    <div class="yellow">
+        yellow
+    </div>
+    <div class="blue">
+        blue
+    </div>
+</body>
+</html>

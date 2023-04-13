@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heigeth, Width, Borders & Background</title>
+
+    <style>
+        #firstPara{
+            color:blue;
+            background-color: grey;
+            height: 25px;
+            width: 400px;
+    
+            border: 5px solid red ;
+            border-width: 4px;
+            border-color: hotpink;
+            border-style: solid; /*This is complusry*/
+    
+            border: 5px solid red;
+            /* is line se hum uper vali tino properties ko ek sath likh sakte h or hum ye bhi jante h ki CSS m jo properti niche likhi h uski prefrance jayda ho h to is line ki prefrance un tino se jayda h to ye property apply hogi */
+    
+            border-radius: 10px;
+    
+            /* bina color style and bina border-color ke border-width jo given h vo by default Black color le lega Q ki our border-style  soid h jo by default black color leti h */
+    
+            /* but lekin jum hum color style dete h prantu border-color nhi dete h to border width ka color automatically color style vala ho jata h */
+        }
+    
+        #secondPara{
+            color:blue;
+            background-color: greenyellow;
+            height: 50px;
+            width: 400px;
+            border-top: 2px solid red;
+            border-bottom: 5px solid brown;
+            border-left: 10px solid magenta;
+            border-right: 15px solid orange;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 15px;
+        }
+    
+        #thirdPara{
+            color:blue;
+            background-color: greenyellow;
+            height: 500px;
+            width: 500px;
+            background-image: url(20220415_014454.jpg);
+            background-repeat: no-repeat;/* repeat - x & repeat - y will make it repeat in x & y */
+    
+            /* background-position: 134px 334px; */
+            /* background-position: center center; */
+            background-position: center top;
+            background-position: 0px 10px ;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <h4>This is a heading</h4>
+    <p id="firstPara">This is a paragraph</p>
+    <p id="secondPara">This is my second paragraph</p>
+    <p id="thirdPara">This is a my third para</p>
+</body>
+</html>

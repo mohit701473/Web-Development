@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+         
+         /* This is our universal selector*/
+        *{
+
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: #70685e;
+        }
+
+        .container{
+            background-color: burlywood;
+            border: 3px solid rgb(58, 43, 43);
+            padding-bottom: 50px;
+            padding-right: 34px;
+            padding-left: 73px;
+            margin: 94px;
+   
+            /* this how we can give all padding & margin format in single line */
+            padding : 56px 78px 6px 50px ; 
+            /*padding/margine : top right  bottom left */
+            
+
+            padding : 28px 29px ;  
+            /* padding : y(top/bottom)  x(left/right) by this we can give same padding in top & bottom and same padding in left & right*/
+
+            border-radius: 23px;
+            width: 600px;
+            /* jb hum padding badate h to width change hoti h Q ki kisi bhi element actual width m margin and padding added hoti h */
+            
+            /* if we want that our width of the element will not get affected by the padding and margin size then we use the properti called box-sizing: border-box; */
+
+            box-sizing: border-box;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is my paragraph</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ipsum delectus ipsam expedita sapiente, nisi ducimus. Incidunt assumenda, doloremque suscipit deleniti adipisci voluptate iure, optio officiis temporibus dolorem labore cum.</p>
+    </div>
+
+    <div class="container">
+        <h2>This is my paragraph</h2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ipsum delectus ipsam expedita sapiente, nisi ducimus. Incidunt assumenda, doloremque suscipit deleniti adipisci voluptate iure, optio officiis temporibus dolorem labore cum.</p>
+    </div>
+
+    <div class="container">
+        <h2>This is my paragraph</h2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ipsum delectus ipsam expedita sapiente, nisi ducimus. Incidunt assumenda, doloremque suscipit deleniti adipisci voluptate iure, optio officiis temporibus dolorem labore cum.</p>
+    </div>
+</body>
+</html>

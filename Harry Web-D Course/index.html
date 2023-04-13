@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align = "center">Mohit</h1>
+    <p>Hello Mohit <br>Good afternoon sir</p>
+    <p>hy Mohit
+        good Morning
+    </p>
+    <hr size="10px" color="blue"  width="100px" align="center">
+    <ul >
+        <li>Milk</li>
+        <li>Cheese
+            <ul>
+                <li>Blue cheese</li>
+                <li>Feta</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>HTML Table</h3>
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name&nbsp;&nbsp;</th>
+                <th>Employe ID&nbsp;&nbsp;</th>
+                <th>Employe Role&nbsp;&nbsp;</th>
+            </tr>
+            <tr>
+                <td>Harry&nbsp;&nbsp;</td>
+                <td>34343&nbsp;&nbsp;</td>
+                <td>Programmer&nbsp;&nbsp;</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Harry&nbsp;&nbsp;</td>
+                <td>34343&nbsp;&nbsp;</td>
+                <td>Programmer&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Harry&nbsp;&nbsp;</td>
+                <td>34343&nbsp;&nbsp;</td>
+                <td>Programmer&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Harry&nbsp;&nbsp;</td>
+                <td>34343&nbsp;&nbsp;</td>
+                <td>Programmer&nbsp;&nbsp;</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+
+    <h2>This is HTML form tutorial</h2> 
+     <form action="backend.php"> <!-- action = "backend.php" ka mtlb h ki backend.php m jao or form ke ander ka sara data vaha submit kr do -->
+        
+        <label for="name">Name:</label> 
+        <!-- lable m for ="id ke ander jo likha h vahi likhna h" lable se benifit yh hota h ki web
+          page m jb hum Name: pr click karenge to vah select ho jaye ga-->
+          <!-- id vahi honi chahiye jo for ke andar diya h -->
+        <div> <!--  div tag ka kam hota h division lek aana -->
+             <input type="text" id="name">  <!--input tag is a inline element-->
+        <div> <!-- it is a block element -->
+        <br> <!--  br tag ka jyada use nhi karte q ki margine or space hm CSS se achive karenge -->
+
+        <div> 
+            <label for="role">Role:</label> 
+            <!-- Role: <input type="text"> -->
+        </div>
+        <div> <!--  div tag ka kam hota h division lek aana -->
+            <input type="text" id="role">  <!--input tag is a inline element-->
+       <div> <!-- it is a block element -->
+        <br>
+
+        <div> 
+        
+             Email: <input type="email" name="myEmail"  > <!-- name vah nam h jis se hamara backend is
+            "Email: <input type="email" name="myEmail" >" tag ko pahcahne ga -->
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+
+        <div>
+            Bonus: <input type="number" name="myBonus" >
+        </div>
+        <br>
+
+        <div>
+            Are yoy eligible?: <input type="checkbox" name="myCheckbox" checked >
+            <!-- jb hum checkbox ko by default chek rakhna chate h to hum 'checked' likh dete h  -->
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="myGender" >
+                    female <input type="radio" name="myGender" >
+                    Other <input type="radio" name="myGender" >
+            <!-- ye jo checkbox banege un m ek hi time pr keval ek hi box ko select kr sakenge 
+            Q ki name same h sabhi ka  -->
+        </div>
+        <br>
+
+        <div>
+            Write about yourself: <br><textarea name="myText"  cols="30" rows="10"></textarea>
+            <!-- textarea ek esa tag/input h HTML m jis se  aap user se abde paragarph 
+            ya bade text i/p le sake user se  -->
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="indica" >Indica</option>
+                <option value="swift" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+</body>
+</html>

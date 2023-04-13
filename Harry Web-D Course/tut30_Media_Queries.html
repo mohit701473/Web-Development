@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 25px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+        @media only screen and (max-width:300px){
+            #box1{
+                display: block;
+                background-color: bisque;
+            }
+        }
+        @media only screen and (max-width:500px) and (min-width:300px){
+            #box2{
+                display: block;
+                background-color: aqua;
+            }
+        }
+        @media only screen and (max-width:800px) and (min-width:500px){
+            #box3{
+                display: block;
+                background-color: blue;
+            }
+        }
+        @media only screen and (min-width:800px){
+            #box4{
+                display: block;
+                background-color: khaki;
+            }
+        }
+        /* eska mtlb h ki etni width pr us box ki CSS lagu ho ajye */
+    </style>
+</head>
+<body>
+    <!-- Media Queries ka mtlb h ki jum bhi humari screen resize ho gi to ek specific CSS add kr do page m -->
+    
+    <!-- for more study of media type use W3School website -->
+
+    <div class="box" id="box1">Me ek iPhone hoon</div>
+    <div class="box" id="box2">Me ek tablet hoon</div>
+    <div class="box" id="box3">Me ek Computer hoon</div>
+    <div class="box" id="box4">Me ek widescreen computer hoon</div>
+</body>
+</html>

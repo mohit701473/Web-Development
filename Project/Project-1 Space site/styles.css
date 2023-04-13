@@ -1,0 +1,77 @@
+body , html{
+    height: 100%;
+    margin: 0;
+    color: #82a5ca;
+    /* color: white; is liye kiya Q ki text ka pehle colour black tha & image add kren ke bad text disappear ho gya tha */
+
+
+    /* background-image: url("giphy.gif"); */
+    /* background-image: url() ye CSS file m image ko add kren ka tarika h */
+
+
+    /* background-size: cover; */
+    /* background-size: cover; property se image pure background m show hogi & h1 tag and button tag image ke upper show honge */
+    /* is pro[perty se image complete background ko le legi if background chota bhoga to image choti ho jaye gi & bda hoga to 1 hi image 2 image m pure background pr show hogi  */
+    
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    
+    
+}
+
+
+#hero{
+    
+    background-image: url("giphy.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0 40px 0;
+}
+
+#title {
+    text-shadow: 0px 0px 4px black;
+    /* text-shadow: right down blur color;   */
+}
+
+
+/*
+Challenge:
+1. Center the text and button
+2. Style the button according to the design.
+   Use a class to select the button.
+*/
+
+/* .container{
+    text-align: center;
+    /* We can center the element using margin , text-align , flex-box
+}
+ */
+
+button{
+    border: none;
+    /* border: none; property se button jo auto maticly border leta h vo hat jayega */
+
+    padding: 5px 10px;
+    /* padding: 5px 10px; se apply text 5px ka top-bottom se and 10px left-right se padding le lega  */
+
+    background-color: white;
+    color: #82a5ca;
+
+    font-family: inherit;
+    /* font-family: inherit; is property se button body ki font se inherit ho jayega mean jo body m fon apply h vo button pr bhi lag jaye gi 
+    also we can apply
+    font-family: 'Orbitron', sans-serif; this property */
+
+    font-weight: 800;
+}
+
+.cta{ 
+    border-bottom: 4px solid white;
+}
+
+#main-logo{
+    width: 100px;
+
+}

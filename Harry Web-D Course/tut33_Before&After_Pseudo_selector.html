@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Before & After Pseudo Selector</title>
+    <style>
+        /* before and after pseudo seletor se hum image pe text ko render kr skte h  */
+        
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            background: url(https://picsum.photos/200/300) no-repeat center center/cover;
+        }
+
+        header::before{
+            background: url(https://picsum.photos/200/300) no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5; /* is se image light ban jaye gi jis se content easly dikh skega */
+
+        }
+        .navigation{
+            font-size: 24px ;
+            display: flex;
+        }
+
+        li{
+            list-style: none;
+            padding: 34px 23px ;
+        }
+        section{
+            height: 344px;
+            
+            margin: 5px 23px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h3{
+            font-size: 3rem;
+        }
+        section::before{
+            content: "this is content";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+       
+    </header>
+    <section>
+        <h3>Welcome to Codind World</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi qui, fugiat mollitia similique amet optio porro nesciunt maxime fuga explicabo doloremque dignissimos neque laborum ea blanditiis quis perspiciatis recusandae? Eum atque nisi et quos.</p>
+    </section>
+</body>
+</html>
