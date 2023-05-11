@@ -4,10 +4,19 @@ const request = require("request")
 
 const app = express() 
 
+app.use(express.static("Public"))
+
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get("/", function(req, res){
-    res.send("Server is set up")
+    res.sendFile(__dirname + "//signup.html")
+})
+
+app.post("/", function(req, res){
+    console.log(req.body.firstName)
+    console.log(req.body.lastName)
+    console.log(req.body.email)
+    res.send("working")
 })
 
 // Server is set up on port 3000

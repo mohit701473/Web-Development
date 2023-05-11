@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
 	<style>
+		*{
+			margin: 0;
+		}
 		.container {
 			display: flex;
 			flex-direction: column;
@@ -13,9 +16,14 @@
 			justify-content: center;
 			height: 100vh;
 		}
+		form{
+			text-align: center;
+		}
+		h2{
+			margin-bottom: 8px;
+		}
 		.logo {
 			width: 150px;
-			margin-bottom: 20px;
 		}
 		input[type="text"], input[type="email"] {
 			padding: 10px;
@@ -37,8 +45,9 @@
 </head>
 <body>
     <div class="container">
-		<img src="download.jpeg" alt="Logo" class="logo">
-		<form>
+		<img src="images/download.jpeg" alt="Logo" class="logo">
+		<form action="/" method="post">
+			<h2>Sign Up to My Newsletter!</h2>
 			<input type="text" name="firstName" placeholder="First Name">
 			<input type="text" name="lastName" placeholder="Last Name">
 			<input type="email" name="email" placeholder="Email">
