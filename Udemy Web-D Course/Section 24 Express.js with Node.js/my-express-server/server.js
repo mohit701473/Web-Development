@@ -6,7 +6,8 @@ app.get("/", function(req, res){
 })
 
 app.get("/contact", function(req, res){
-    res.send("contact me at: mohit@gmail.com")
+    //res.send("contact me at: mohit@gmail.com")
+    res.redirect("/about")
 })
 
 app.get("/about", function(req, res){
