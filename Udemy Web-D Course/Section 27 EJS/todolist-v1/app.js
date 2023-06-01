@@ -14,7 +14,6 @@ let workItems = []
 app.get("/", function(req, res){
 
     let today = new Date() 
-    let currentDay = today. getDay()
     
     let options = {
         weekday: "long" ,
@@ -44,6 +43,10 @@ app.get("/work", function(req, res){
     res.render("list", {listTitle: "Work List", newListItems: workItems})
 })
 
+
+app.get("/about", function(req, res){
+    res.render("about")
+})
 
 app.listen(3000, function(){
     console.log("server is running on port 3000")
