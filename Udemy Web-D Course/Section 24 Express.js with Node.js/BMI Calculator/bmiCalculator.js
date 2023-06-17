@@ -18,5 +18,5 @@ app.post("/bmicalculator", function(req, res){
 })
 
 app.listen(3000, function(){
-    console.log("Server is created on port 3000")
+    console.log("Server is running on port 3000")
 })
